@@ -23,18 +23,28 @@ tim.shape('turtle')
 # Different Shapes
 colors = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue",
           "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
+#
+#
+# def draw_shape(num_sides):
+#     angle = 360 / num_sides
+#     for _ in range(num_sides):
+#         tim.forward(100)
+#         tim.right(angle)
+#
+#
+# for shape_side_n in range(3, 11):
+#     tim.color(random.choice(colors))
+#     draw_shape(shape_side_n)
 
 
-def draw_shape(num_sides):
-    angle = 360 / num_sides
-    for _ in range(num_sides):
-        tim.forward(100)
-        tim.right(angle)
-
-
-for shape_side_n in range(3, 11):
+# random walk
+directions = [0, 90, 180, 270]
+tim.pensize(10)
+tim.speed(10)
+for _ in range(50):
+    tim.forward(30)
     tim.color(random.choice(colors))
-    draw_shape(shape_side_n)
+    tim.setheading(random.choice(directions))
 
 screen = Screen()
 screen.exitonclick()
