@@ -1,3 +1,5 @@
+# Rock Paper Scissors/main.py
+
 from logo import rock, paper, scissors
 from random import randint
 

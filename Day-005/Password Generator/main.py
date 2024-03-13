@@ -1,3 +1,4 @@
+# Password Generator Project
 from characters import letters, symbols, numbers
 import random
 
